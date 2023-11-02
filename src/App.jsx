@@ -9,16 +9,13 @@ export default function App() {
   return (
     <>
       <Provider store={store}>
-        {/* <BrowserRouter> */}
-        <ToastContainer className="toast" />
-        <div>
-          <h1>HELLO WORLD!!!</h1>
-        </div>
-        {/* <Routes>
+        <BrowserRouter>
+          <ToastContainer className="toast" />
+          <Routes>
             <Route path="/lecture/:room" element={<Login />} />
             <Route path="/lecture/:room/:access" element={<Room />} />
           </Routes>
-        </BrowserRouter> */}
+        </BrowserRouter>
       </Provider>
     </>
   )
